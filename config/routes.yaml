@@ -1,0 +1,53 @@
+# Medicos
+medicos:
+  path: /medicos
+  controller: App\Controller\MedicosController::buscarTodos
+  methods:
+    - GET
+criar_medico:
+  path: /medicos
+  controller: App\Controller\MedicosController::nova
+  methods:
+    - POST
+atualizar_medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::atualiza
+  methods:
+    - PUT
+medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::buscarUm
+  methods:
+    - GET
+remove_medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::remover
+  methods:
+    - DELETE
+
+# Especialidades
+especialidades:
+  path: /especialidades
+  controller: App\Controller\EspecialidadesController::buscarTodos
+  methods:
+    - GET
+criar_especialidade:
+  path: /especialidades
+  controller: App\Controller\EspecialidadesController::nova
+  methods:
+    - POST
+atualizar_especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::atualiza
+  methods:
+    - PUT
+especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::buscarUm
+  methods:
+    - GET
+remove_especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::remover
+  methods:
+    - DELETE

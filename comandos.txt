@@ -1,0 +1,31 @@
+# Criar banco de dados
+
+php bin\console doctrine:database:create
+
+# Atualizar dados mapeados (gera o arquivo das migrations)
+
+php bin\console doctrine:migrations:diff
+
+# Rodas migrations
+
+php bin\console doctrine:migrations:migrate
+
+# Rodar uma migration (o número da migration varia)
+
+php bin\console doctrine:migrations:execute --up 20190408230707
+
+# Criar uma entidade
+
+php bin\console make:entity
+
+# Criar a migration da entidade criada
+
+php bin\console make:migration
+
+# Deletar banco de dados
+
+php bin\console doctrine:database:drop --force
+
+# Criar um controller
+
+php bin\console make:controller
