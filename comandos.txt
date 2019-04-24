@@ -29,3 +29,19 @@ php bin\console doctrine:database:drop --force
 # Criar um controller
 
 php bin\console make:controller
+
+# Criar um usuário
+
+php bin\console make:user
+
+# Criar uma fixture (para popular o banco, criar dados)
+
+php bin\console make:fixtures
+
+# Criptografar uma senha
+
+php bin\console security:encode-password
+
+# Rodar fixtures
+
+php bin\console doctrine:fixtures:load
